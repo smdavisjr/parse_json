@@ -1,0 +1,9 @@
+{
+	"market": "BNA",
+	"ride": "type",
+	"currency": {
+		"USD": "United States",
+		"CAD": "Canada"
+	},
+	"Office": "downtown"
+}
