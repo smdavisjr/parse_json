@@ -52,7 +52,7 @@ print('-----')
 # COUNT OF NON-ACTIVE REGIONS
 print('count not active:')
 print(active_false)
-# print('')
+# print('') 
 print('-----')
 print('-----')
 
