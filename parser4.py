@@ -17,7 +17,7 @@ for key in resp:
     status = (resp[region]['general']['active'])
     print (region, status)
 print('-----')
-print('')
+# print('')
 #
 #
 # CLASSIFICATION OF REGIONS AS ACTIVE OR NON-ACTIVE
@@ -25,28 +25,34 @@ for key in resp:
     region = key
     active_test = 'active' if ((resp[region]['general']['active']) == 'true') else 'non-active'
     # pprint (active_test)
+
+# while True:
+#     active_test = 'active'
+#     if (resp[region]['general']['active']) == 'true':
+        # break
+
 active_true = active_test.count('active')
 active_false = active_test.count('non-active')
 #
 #
 # COUNT OF ALL REGIONS
-print ('count total:')
+print('count total:')
 print(len(data.keys()))
-print('')
+# print('')
 print('-----')
 #
 #
 # COUNT OF ACTIVE REGIONS
-print ('count active:')
+print('count active:')
 print(active_true)
-print('')
+# print('')
 print('-----')
 #
 #
 # COUNT OF NON-ACTIVE REGIONS
-print ('count not active:')
-print (active_false)
-print('')
+print('count not active:')
+print(active_false)
+# print('')
 print('-----')
 print('-----')
 
