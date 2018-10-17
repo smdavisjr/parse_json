@@ -18,3 +18,5 @@ for key in resp:
     status = str(resp[region]['general']['active'])
     row = region + "," + status + "\n"
     csv.write(row)
+
+print ('Export successful')
