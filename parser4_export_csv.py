@@ -10,13 +10,14 @@ resp = json.loads(json_str)
 
 download_dir = 'testparser4.csv'
 csv = open(download_dir, "w")
-columnTitleRow = "region, status\n"
+columnTitleRow = "region, is_active, status\n"
 csv.write(columnTitleRow)
 
 for key in resp:
     region = key
     status = str(resp[region]['general']['active'])
-    row = region + "," + status + "\n"
+    active_test = 'active' if status == 'True' else 'non-active'
+    row = region + "," + status + "," + active_test + "\n"
     csv.write(row)
 
 print ('Export successful')
