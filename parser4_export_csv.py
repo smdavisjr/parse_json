@@ -8,7 +8,7 @@ with open('production.json') as file:
 json_str = json.dumps(data)
 resp = json.loads(json_str)
 
-download_dir = 'testparser4.csv'
+download_dir = 'output.csv'
 csv = open(download_dir, "w")
 columnTitleRow = "region, is_active, status\n"
 csv.write(columnTitleRow)
